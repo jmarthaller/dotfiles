@@ -122,6 +122,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
+export PATH=$PATH:~/bin
+[ -f ~/bin/tldr ] && compctl -k "($( tldr 2>/dev/null --list))" tldr
+
 alias status="git status"
 alias add="git add"
 alias commit="git commit -m"
